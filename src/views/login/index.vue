@@ -73,7 +73,7 @@ import { validUsername } from "@/utils/validate";
 export default {
   name: "Login",
   data() {
-    //进行表单验证，验证用户名的密码操作
+    // 进行表单验证，验证用户名的密码操作
     const validateUsername = (rule, value, callback) => {
       if (!validUsername(value)) {
         callback(new Error("Please enter the correct user name"));
@@ -94,12 +94,12 @@ export default {
         password: "111111",
       },
       loginRules: {
-        username: [
-          { required: true, trigger: "blur", validator: validateUsername },
-        ],
-        password: [
-          { required: true, trigger: "blur", validator: validatePassword },
-        ],
+        // username: [
+        //   { required: false, trigger: "blur", validator: validateUsername },
+        // ],
+        // password: [
+        //   { required: false, trigger: "blur", validator: validatePassword },
+        // ],
       },
       loading: false,
       passwordType: "password",

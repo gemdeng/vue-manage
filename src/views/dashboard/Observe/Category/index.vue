@@ -57,11 +57,11 @@ export default {
             show: true,
           },
           data: [
-            { value: 1048, name: "视频" },
-            { value: 735, name: "Direct" },
-            { value: 580, name: "Email" },
-            { value: 484, name: "Union Ads" },
-            { value: 300, name: "Video Ads" },
+            { value: 1048, name: "搜索引擎" },
+            { value: 735, name: "直接访问" },
+            { value: 580, name: "邮件营销" },
+            { value: 484, name: "联盟广告" },
+            { value: 300, name: "视频广告" },
           ],
         },
       ],
@@ -75,7 +75,7 @@ export default {
       mychart.setOption({
         title: {
           text: name,
-          subtext: "value",
+          subtext: value,
         },
       });
     });
